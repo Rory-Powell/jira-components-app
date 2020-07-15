@@ -1,0 +1,33 @@
+
+
+# GLOBAL
+*.DS_Store
+.idea/
+*.iml
+
+# SERVICE
+jira-components-service/target
+
+
+# JS
+# dependencies
+jira-components-js/node_modules
+jira-components-js/.pnp
+jira-components-js/.pnp.js
+
+# testing
+jira-components-js/coverage
+
+# production
+jira-components-js/build
+
+# misc
+jira-components-js/.DS_Store
+jira-components-js/.env.local
+jira-components-js/.env.development.local
+jira-components-js/.env.test.local
+jira-components-js/.env.production.local
+
+jira-components-js/npm-debug.log*
+jira-components-js/yarn-debug.log*
+jira-components-js/yarn-error.log*

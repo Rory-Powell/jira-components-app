@@ -1,0 +1,67 @@
+.appContainer {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.appContainer h1 {
+    font-size: 26px;
+}
+
+.tileContainer h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding: 0px;
+    font-size: 20px;
+
+}
+
+.tileRow {
+    display: flex;
+}
+
+.tile {
+    vertical-align: text-top;
+    background-color: rgba(243, 244, 253, 0.73);
+    margin: 0px 5px 0px 5px;
+    min-width: 200px;
+}
+
+.blockedTile {
+    background-color: rgba(255, 15, 2, 0.53);
+}
+
+.tileHeader {
+    padding-left: 10px;
+    font-size: 12px;
+    color: #6b6b6b;
+}
+
+.tileTitle {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #010101;
+}
+
+.tileBody {
+    padding: 0px 5px 5px 5px;
+    font-size: 15px;
+}
+
+.component {
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    background-color: white;
+    margin-bottom: 5px;
+    font-style: italic;
+    box-shadow: 1px 1px #a2a2a2;
+}
+
+.freeComponent {
+    //color: green;
+    background-color: rgba(33, 214, 0, 0.42);;
+}
+
+.inProgressComponent {
+    background-color: rgba(0, 173, 255, 0.5)
+}
