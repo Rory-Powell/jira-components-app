@@ -31,15 +31,14 @@ public class JiraController {
         LOG.info("GET /proxy");
 
         HttpHeaders headers = new HttpHeaders();
-//        headers.add("Authorization", "Basic cm9yeS5jb2Rlc0BnbWFpbC5jb206NTloY21ibncxZGxCcTdpamJMaVRFOTQ3");
-        headers.add("Cookie", "JSESSIONID=1A27ECF9DBE6107A1F99B66C05EA0710");
-
+        // TODO: Add authorization headers
+        
         Map<String, Object> request = new HashMap<>();
         request.put("jql", jql);
         request.put("startAt", 0);
         request.put("maxResults", 5000);
 
-        ResponseEntity<Object> response = restTemplate.exchange("https://issues.corp.rapid7.com/rest/api/2/search",
+        ResponseEntity<Object> response = restTemplate.exchange("https://your-server-here.com/rest/api/2/search",
                                                         HttpMethod.POST,
                                                         new HttpEntity<>(request, headers),
                                                         Object.class);
